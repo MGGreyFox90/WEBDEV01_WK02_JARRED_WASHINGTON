@@ -1,12 +1,22 @@
-body{
-    margin: 0 0;
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: burlywood;
 }
 
-#name{
-    margin: 0 0 200px 0;
+#brief {
+    padding: 30px;
+    background-color: beige;
 }
 
-.box{
-    background-color: grey;
+#article-brief {
+    display: flex;
+    justify-content: space-around;
+}
 
+#article-brief p{
+    position: relative;
+    width: 30%;
 }
