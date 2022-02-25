@@ -1,9 +1,13 @@
-h1 {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-name {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
     font-size: 50px;
-    color: burlywood;
+    color: rgb(222, 145, 135);
 }
 
 #brief {
@@ -19,4 +23,43 @@ h1 {
 #article-brief p{
     position: relative;
     width: 30%;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+}
+
+#list h2 {
+    text-align: center;
+    color: rgb(165, 116, 42);
+    font-size: 25px;
+}
+
+#list ul {
+    margin: 0 auto;
+    padding-left: 0px;
+}
+
+#list ul li {
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+    background: rgb(222, 145, 135);
+    color: black;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 650px) {
+    #brief{
+        background-color: aquamarine;
+    }
+
+    #article-brief{
+        flex-direction: column;
+    }
+
+    #article-brief p{
+        width: 100%;
+    }
 }
